@@ -1,9 +1,21 @@
+import { useState } from 'react'
 import './Header.css'
 
 export const Header = () => {
+    const [navBar, setNavBar] = useState(false);
+
+    const backgroundChange = () => {
+        if(window.scrollY >= 620) {
+            setNavBar(true)
+        } else {
+            setNavBar(false) 
+    }};
+
+    window.addEventListener('scroll', backgroundChange);
+
     return (
       
-        <header>
+        <header className={navBar ? 'navBar active' : 'navBar'}>
 
         <div className="header">
 

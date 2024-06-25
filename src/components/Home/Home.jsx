@@ -4,6 +4,7 @@ import github from '../../assets/icons/github.png'
 import linkedin from '../../assets/icons/linkedin.png'
 import whatsapp from '../../assets/icons/whatsapp.png'
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
+import { motion } from 'framer-motion';
 
 export const Home = () => {
 
@@ -23,7 +24,9 @@ export const Home = () => {
 
         </div>
 
+
         <div className='iconsArea'>
+        <motion.div initial={{ x: '-100vw', opacity: '0.5' }} animate={{ x: 0, opacity: '1'}} transition={{ type: 'spring', stiffness: 30 }}>
 
         <a target='blank' href="https://www.linkedin.com/in/jo%C3%A3o-pedro-venturini-sales-462600258/">
             <div className='icons'>
@@ -48,8 +51,10 @@ export const Home = () => {
                 <img className='icon' src={discord} alt="icon" />
             </div>
         </a>
-
+        
+        </motion.div>
         </div>
+
         </>
     )
 
