@@ -1,3 +1,9 @@
+@keyframes infiniteArrow {
+    100%{
+        transform: translateY(0);
+    }
+}
+
 .banner {
     background-image: url(/src/assets/images/Banner.png);
     background-position: center;
@@ -25,7 +31,7 @@
     flex-direction: column;
     position: absolute;
     top: 70%;
-    left: 3%;
+    left: 2%;
 }
 
 .icons {
@@ -47,4 +53,29 @@
 
 .icon {
     width: 20px;
+}
+
+.scroll {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 20%;
+    right: 1%;
+    gap: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+    overflow: hidden;
+}
+    
+.animation {
+    display: flex;
+    transform: translateY(-100%);
+    animation: infiniteArrow 1s infinite cubic-bezier(0.3, 0.74, 0, 1.02);
+}
+
+.animatedArrow {
+    position: absolute;
+    top: 100%;
 }

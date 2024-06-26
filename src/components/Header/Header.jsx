@@ -1,11 +1,12 @@
 import { useState } from 'react'
+import { motion } from 'framer-motion';
 import './Header.css'
 
 export const Header = () => {
     const [navBar, setNavBar] = useState(false);
 
     const backgroundChange = () => {
-        if(window.scrollY >= 620) {
+        if(window.scrollY >= 160) {
             setNavBar(true)
         } else {
             setNavBar(false) 
@@ -16,7 +17,7 @@ export const Header = () => {
     return (
       
         <header className={navBar ? 'navBar active' : 'navBar'}>
-
+        <motion.div initial={{ y: '-20vh' }} animate={{ y: 0}} transition={{ type: 'spring', stiffness: 30}}>
         <div className="header">
 
             <div className="logo">
@@ -37,6 +38,7 @@ export const Header = () => {
             </div>
 
         </div>
+        </motion.div>
 
         </header>
      

@@ -1,6 +1,7 @@
 import './App.css'
 import { Header } from "./components/Header/Header"
 import { Home } from './components/Home/Home'
+import { Container } from './components/Container/Container'
 import { AboutMe } from './components/AboutMe/AboutMe'
 
 function App() {
@@ -9,7 +10,9 @@ function App() {
   <> 
     <Header/> 
     <Home/>
-    <AboutMe/>
+    <Container>
+      <AboutMe/>
+    </Container>
   </>
   
   )

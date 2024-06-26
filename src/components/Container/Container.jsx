@@ -1,11 +1,11 @@
 import './Container.css'
 
 
-export const Container = ({ Children }) => {
+export const Container = ({ children }) => {
     return (
 
         <div className='container'>
-            {Children}
+            { children }
         </div>
 
     )

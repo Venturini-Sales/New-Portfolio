@@ -1,0 +1,114 @@
+.aboutMe {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.centralContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f5f5;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin-top: 100px;
+    width: 1000px;
+    height: 400px;
+}
+
+.centralContent h1 {
+    margin-top: 20px;
+    font-size: 120px;
+    color: #0000001a;
+}
+
+.aboutMeContent {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 22px;
+    font-weight: 400;
+    width: 750px;
+}
+
+.languages {
+    position: relative;
+    right: 0%;
+    top: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ebebeb;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    width: 700px;
+    height: 100px;
+    gap: 20px;
+}
+
+.languageIcon {
+    width: 60px;
+    height: 60px;
+}
+
+.svgIconHTML path {
+    transition: fill 0.5s ease;
+}
+
+.svgIconHTML:hover path {
+    transition: fill 0.5s ease;
+    fill: #E44D26;
+}
+
+.svgIconCSS path {
+    transition: fill 0.5s ease;
+}
+
+.svgIconCSS:hover path {
+    transition: fill 0.5s ease;
+    fill: #1572B6;
+}
+
+.svgIconJavascript path {
+    transition: fill 0.5s ease;
+}
+
+.svgIconJavascript:hover path {
+    transition: fill 0.5s ease;
+    fill: #F0DB4F;
+}
+
+.svgIconTypescript path {
+    transition: fill 0.5s ease;
+}
+
+.svgIconTypescript:hover path {
+    transition: fill 0.5s ease;
+    fill: #007acc;
+}
+
+.svgIconTailwind path {
+    transition: fill 0.5s ease;
+}
+
+.svgIconTailwind:hover path {
+    transition: fill 0.5s ease;
+    fill: #38bdf8;
+}
+
+.svgIconSASS path {
+    transition: fill 0.5s ease;
+}
+
+.svgIconSASS:hover path {
+    transition: fill 0.5s ease;
+    fill: #CB6699;
+}
+
+.svgIconSQL path {
+    transition: fill 0.5s ease;
+}
+
+.svgIconSQL:hover path {
+    transition: fill 0.5s ease;
+    fill: #00618A;
+}
