@@ -6,7 +6,7 @@ export const Header = () => {
     const [navBar, setNavBar] = useState(false);
 
     const backgroundChange = () => {
-        if(window.scrollY >= 160) {
+        if(window.scrollY >= 590) {
             setNavBar(true)
         } else {
             setNavBar(false) 

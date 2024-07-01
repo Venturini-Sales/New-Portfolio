@@ -32,7 +32,8 @@ export const Home = () => {
 
         <div className='iconsArea'>
         <motion.div initial={{ x: '-20vw' }} animate={{ x: 0}} transition={{ type: 'spring', stiffness: 30}}>
-
+        
+        <div className='flexIcons'>
         <a target='blank' href="https://www.linkedin.com/in/jo%C3%A3o-pedro-venturini-sales-462600258/">
             <div className='icons'>
                 <img className='icon' src={linkedin} alt="icon" />
@@ -56,10 +57,11 @@ export const Home = () => {
                 <img className='icon' src={discord} alt="icon" />
             </div>
         </a>
-        
+        </div>
         </motion.div>
         </div>
-        
+
+        <div className='scrollArea'>
         <motion.div initial={{ x: '20vw' }} animate={{ x: 0}} transition={{ type: 'spring', stiffness: 30}}>
         <div className='scroll'>
             Scroll Down
@@ -81,7 +83,7 @@ export const Home = () => {
                   </div>
         </div>
         </motion.div>
-
+        </div>
         </>
     )
 
