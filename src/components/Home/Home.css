@@ -1,3 +1,7 @@
+/*//////////Home//////////*/
+
+
+
 @keyframes infiniteArrow {
     100%{
         transform: translateY(0);
@@ -25,6 +29,12 @@
     margin-top: 10px;
     font-size: 55px;
 }
+
+
+
+/*//////////Social Media//////////*/
+
+
 
 .iconsArea {
     position: absolute;
@@ -58,6 +68,12 @@
 .icon {
     width: 22px;
 }
+
+
+
+/*//////////Scroll Info//////////*/
+
+
 
 .scrollArea {
     position: absolute;

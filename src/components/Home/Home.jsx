@@ -65,15 +65,15 @@ export const Home = () => {
         <motion.div initial={{ x: '20vw' }} animate={{ x: 0}} transition={{ type: 'spring', stiffness: 30}}>
         <div className='scroll'>
             Scroll Down
-            <div class="c-infinite">
-                    <span class="arrowAnimation">
-                      <span class="animation">
+            <div className="c-infinite">
+                    <span className="arrowAnimation">
+                      <span className="animation">
                         <span>
                           <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M10.8333 13.9766L15.3033 9.50658L16.4816 10.6849L9.99998 17.1666L3.51831 10.6849L4.69664 9.50658L9.16664 13.9766V3.83325H10.8333V13.9766Z" fill="#ffffff"></path>
                           </svg>
                         </span>
-                        <span class="animatedArrow">
+                        <span className="animatedArrow">
                           <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M10.8333 13.9766L15.3033 9.50658L16.4816 10.6849L9.99998 17.1666L3.51831 10.6849L4.69664 9.50658L9.16664 13.9766V3.83325H10.8333V13.9766Z" fill="#ffffff"></path>
                           </svg>
