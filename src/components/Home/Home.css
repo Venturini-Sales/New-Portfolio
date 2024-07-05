@@ -102,3 +102,15 @@
     position: absolute;
     top: 100%;
 }
+
+
+@media only screen and (max-width: 768px) {
+
+    .banner h1 {
+        font-size: 1em;
+    }
+
+    .flexIcons {
+        gap: 0.3em;
+    }
+}

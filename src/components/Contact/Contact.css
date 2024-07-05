@@ -35,10 +35,18 @@
     gap: 50px;
 }
 
+.contactFormResponsive {
+  display: none;
+}
+
 .formInput {
     display: flex;
     flex-direction: column;
   }
+
+.formResponsive {
+  display: none;
+}
   
   .formInput label.text {
     font-size: 0.75rem;
@@ -98,4 +106,45 @@ textarea::-webkit-scrollbar-thumb {
     background-color: #9999a1;
     border-radius: 30px;
     cursor: default;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+  .contact .centralContent {
+      width: 95vw;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+  .contactForm {
+    display: none;
+  }
+
+  .contactFormResponsive {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact .centralContent {
+    width: 95vw;
+    gap: 0;
+}
+
+.formInput textarea {
+  padding: 11px 10px;
+  font-size: 0.75rem;
+  border: 2px #1A1A1A solid;
+  border-radius: 5px;
+  background: transparent;
+  resize: none;
+  width: 200px;
+  height: 15%;
+  margin-bottom: 5px;
+}
+
+
 }

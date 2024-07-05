@@ -188,4 +188,51 @@
     margin-right: 10px;
     color: rgba(0, 0, 0, 0.5);
   }
+
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .aboutMe .centralContent {
+        width: 95vw;
+    }
+
+    .aboutMeContent {
+        width: 97%;
+        font-size: 21px;
+    }
+
+  }
+
+
+  @media only screen and (max-width: 768px) {
+
+    .centralContent h1 {
+        font-size: 20vw !important;
+    }
+    
+    .aboutMe .centralContent {
+        width: 95vw;
+    }
+
+    .aboutMeContent {
+        width: 90%;
+        font-size: 90%;
+    }
+
+    .languages {
+        width: 97vw;
+        height: 10vh;
+        top: 70%;
+        gap: 10px;
+    }
+
+    .languageIcon {
+        width: 8vw;
+        height: auto;
+    }
+
+    .parallax .scroller {
+        font-size: 2em;
+    }
+
+  }
   

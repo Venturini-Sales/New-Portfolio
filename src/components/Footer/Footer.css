@@ -81,3 +81,11 @@
    input:checked + .inputSlider:after {
     content: 'PT-BR';
    }
+
+
+   @media only screen and (max-width: 768px) {
+
+    .footer {
+        font-size: 0.7em;
+    }
+   }

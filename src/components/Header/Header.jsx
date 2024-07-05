@@ -4,6 +4,11 @@ import './Header.css'
 
 export const Header = () => {
     const [navBar, setNavBar] = useState(false);
+    const [menuVisible, setMenuVisible] = useState(false);
+
+    const toggleMenu = () => {
+        setMenuVisible(!menuVisible);
+      };
 
     const backgroundChange = () => {
         if(window.scrollY >= 590) {
@@ -13,6 +18,7 @@ export const Header = () => {
     }};
 
     window.addEventListener('scroll', backgroundChange);
+
 
     return (
       
@@ -27,7 +33,17 @@ export const Header = () => {
             </div>
 
             <div className="menu">
-                <nav>
+                <div className='responsiveMenu'>
+                <input type="checkbox" id="checkbox" onClick={toggleMenu}></input>
+                <label htmlFor="checkbox" className="toggle">
+                    <div className="bars" id="bar1"></div>
+                    <div className="bars" id="bar2"></div>
+                    <div className="bars" id="bar3"></div>
+                </label>
+                </div>
+
+
+                <nav className={menuVisible ? 'menuVisible' : 'menuHidden'}>
                     <ul>    
                         <li><a href="">Home</a></li>
                         <li><a href="">About Me</a></li>

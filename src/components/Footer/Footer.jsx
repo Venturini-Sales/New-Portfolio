@@ -11,9 +11,9 @@ export const Footer = () => {
 
 
             <div>
-            <label class="switch">
-                <input type="checkbox"></input>
-                <span class="inputSlider"></span>
+            <label htmlFor='language' className="switch">
+                <input type="checkbox" id='language'></input>
+                <span className="inputSlider"></span>
             </label>
             </div>
 
