@@ -1,4 +1,7 @@
 import './Home.css'
+import { useContext } from 'react';
+import { LanguageContext } from '../../contexts/context';
+import { textIdioms, miscellaneousIdioms } from '../../data/language';
 import discord from '../../assets/icons/discord.png'
 import github from '../../assets/icons/github.png'
 import linkedin from '../../assets/icons/linkedin.png'
@@ -8,6 +11,9 @@ import { motion } from 'framer-motion';
 
 export const Home = () => {
 
+    const { language } = useContext(LanguageContext);
+
+
     const [text] = useTypewriter({
         words: ['João Pedro Venturini Sales']
     });
@@ -16,11 +22,11 @@ export const Home = () => {
         <>
         <div className='banner'>
         <motion.div initial={{ x: '-20vw', opacity: 0 }} animate={{ x: 0, opacity: 1}} transition={{ type: 'spring', stiffness: 25}}>
-            <h1>Welcome to my Portfolio</h1>
+            <h1>{textIdioms.homeText[`${language}1`]}</h1>
         </motion.div>
 
         <motion.div initial={{ x: '20vw', opacity: 0 }} animate={{ x: 0, opacity: 1}} transition={{ type: 'spring', stiffness: 25}}>
-            <h1>I'm a front-end developer</h1>
+            <h1>{textIdioms.homeText[`${language}2`]}</h1>
         </motion.div>
             <h1 className='type'>
                 {text}
@@ -64,7 +70,7 @@ export const Home = () => {
         <div className='scrollArea'>
         <motion.div initial={{ x: '20vw' }} animate={{ x: 0}} transition={{ type: 'spring', stiffness: 30}}>
         <div className='scroll'>
-            Scroll Down
+        {miscellaneousIdioms.scrollDown[language]}
             <div className="c-infinite">
                     <span className="arrowAnimation">
                       <span className="animation">

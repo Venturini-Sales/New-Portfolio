@@ -1,11 +1,15 @@
 
-import { useRef } from 'react'
+import { useContext, useRef } from 'react';
+import { LanguageContext } from '../../contexts/context';
+import { sectionsIdioms, textIdioms, miscellaneousIdioms } from '../../data/language';
 import {  motion, useSpring, useTransform, useMotionValue, useVelocity, useAnimationFrame} from 'framer-motion';
 import './AboutMe.css'
 
 
 
 export const AboutMe = () => {
+
+  const { language } = useContext(LanguageContext);
 
   function wrapValue(min, max, value) {
     const rangeSize = max - min;
@@ -58,11 +62,10 @@ export const AboutMe = () => {
                 <motion.div viewport={{ once: true, amount: 0.4 }}  initial={{ x: '-20vw', opacity: 0 }} whileInView={{ x: 0, opacity: 1}} transition={{ type: 'spring', stiffness: 25} } >
                 <div className='centralContent'>
         
-                    <h1>About Me</h1>
+                    <h1>{sectionsIdioms.aboutMe[language]}</h1>
 
                     <div className='aboutMeContent'>
-                        <p>
-                        I'm a web development enthusiast passionate about turning ideas into efficient and impactful digital solutions. I'm constantly seeking new challenges to expand my knowledge and skills, focusing on continuous learning and applying best practices to create exceptional user experiences. I value teamwork and believe clear communication is crucial for project success. Ready to contribute significantly in dynamic web development environments, I strive to exceed expectations and deliver high-quality results.</p>
+                        <p>{textIdioms.aboutMeText[language]}</p>
                     </div>
                     <motion.div viewport={{ once: true, amount: 0.4 }}  initial={{ x: '40vw', opacity: 0 }} whileInView={{ x: 0, opacity: 1}} transition={{ type: 'spring', stiffness: 25}}>
                     <div className='languages'>
@@ -147,8 +150,8 @@ export const AboutMe = () => {
                 </motion.div>
                 <div className='secondaryContent'>
 
-                <ParallaxText baseVelocity={-5}>Design Notion — Good TeamWork — Adaptability — Creativy — </ParallaxText>
-                <ParallaxText baseVelocity={5}>Fast Learning — Proactivity — Self Confidence — Good Communication —</ParallaxText>
+                <ParallaxText baseVelocity={-5}>{miscellaneousIdioms.parallaxText[`${language}1`]}</ParallaxText>
+                <ParallaxText baseVelocity={5}>{miscellaneousIdioms.parallaxText[`${language}2`]}</ParallaxText>
 
                   
                 </div>
