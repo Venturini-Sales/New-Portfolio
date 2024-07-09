@@ -101,6 +101,10 @@
         visibility: hidden !important;
     }
 
+    .projects .centralContent h1 {
+        font-size: 15vw;
+    }
+
     .projects .centralContent {
         width: 95vw;
     }
@@ -120,6 +124,11 @@
 
     .slick-next:before, .slick-prev:before {
         visibility: hidden !important;
+    }
+
+    
+    .projects .centralContent h1 {
+        font-size: 15vw;
     }
 
     .projects .centralContent {

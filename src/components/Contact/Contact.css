@@ -114,6 +114,11 @@ textarea::-webkit-scrollbar-thumb {
       width: 95vw;
   }
 
+  
+  .contact .centralContent h1 {
+    font-size: 15vw;
+}
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -132,6 +137,11 @@ textarea::-webkit-scrollbar-thumb {
   .contact .centralContent {
     width: 95vw;
     gap: 0;
+}
+
+
+.contact .centralContent h1 {
+  font-size: 15vw;
 }
 
 .formInput textarea {
