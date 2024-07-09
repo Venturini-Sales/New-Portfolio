@@ -205,8 +205,8 @@
 
   @media only screen and (max-width: 768px) {
 
-    .centralContent h1 {
-        font-size: 20vw !important;
+    .aboutMe .centralContent h1 {
+        font-size: 15vw;
     }
     
     .aboutMe .centralContent {

@@ -97,6 +97,10 @@
    
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
 
+    .slick-next:before, .slick-prev:before {
+        visibility: hidden !important;
+    }
+
     .projects .centralContent {
         width: 95vw;
     }
@@ -113,6 +117,10 @@
   }
 
    @media only screen and (max-width: 768px) {
+
+    .slick-next:before, .slick-prev:before {
+        visibility: hidden !important;
+    }
 
     .projects .centralContent {
         width: 95vw;
