@@ -1,17 +1,17 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Inter Tight", Arial, Helvetica, sans-serif;
-    user-select: none;
-}  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter Tight", Arial, Helvetica, sans-serif;
+  user-select: none;
+}
 
 body::-webkit-scrollbar {
-  display: none; 
+  display: none;
 }
 
 body {
-    --s: 82px;
+  --s: 82px;
   --c1: #b1b1b1;
   --c2: #bdbdbd;
   --c3: #acacac;
@@ -34,5 +34,5 @@ body {
       var(--c2) 0
     );
   background-size: calc(1.732 * var(--s)) var(--s);
-    overflow-x: hidden;
+  overflow-x: hidden;
 }

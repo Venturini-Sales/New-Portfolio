@@ -1,238 +1,223 @@
 /*//////////About Me//////////*/
 
-
-
 .aboutMe {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .aboutMe .centralContent {
-    margin-top: 90px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #f5f5f5;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    width: 1000px;
-    height: 400px;
+  margin-top: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f5f5f5;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  width: 1000px;
+  height: 400px;
 }
 
 .centralContent h1 {
-    margin-top: 10px;
-    font-size: 120px;
-    color: #0000001a;
+  margin-top: 10px;
+  font-size: 120px;
+  color: #0000001a;
 }
 
 .aboutMeContent {
-    text-align: center;
-    font-size: 20px;
-    font-weight: 400;
-    width: 750px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  width: 750px;
 }
-
-
 
 /*//////////Languages//////////*/
 
-
-
 .languages {
-    position: relative;
-    right: 0%;
-    top: 15%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #dfdfdf;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    width: 700px;
-    height: 100px;
-    gap: 20px;
+  position: relative;
+  right: 0%;
+  top: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dfdfdf;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  width: 700px;
+  height: 100px;
+  gap: 20px;
 }
 
 .languageIcon {
-    width: 60px;
-    height: 60px;
+  width: 60px;
+  height: 60px;
 }
 
-.languageArea{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.languageArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .languageArea .tip {
-    padding: 5px 20px;
-    border-radius: 40px;
-    position: absolute;
-    opacity: 0;
-    visibility: hidden;
-    text-transform: uppercase;
-    font-weight: 800;
-    font-size: 12px;
-    top: 0;
-    transform: translateY(-20%);
-    transition: all 0.3s ease;
+  padding: 5px 20px;
+  border-radius: 40px;
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 12px;
+  top: 0;
+  transform: translateY(-20%);
+  transition: all 0.3s ease;
 }
 
 .languageArea:hover .tip {
-    top: -10%;
-    opacity: 1;
-    visibility: visible;
+  top: -10%;
+  opacity: 1;
+  visibility: visible;
 }
 
 .svgIconReact:hover g {
-    fill: #61DAFB;
+  fill: #61dafb;
 }
 
 .svgIconHTML path {
-    transition: fill 0.5s ease;
+  transition: fill 0.5s ease;
 }
 
 .svgIconHTML:hover path {
-    transition: fill 0.5s ease;
-    fill: #E44D26;
+  transition: fill 0.5s ease;
+  fill: #e44d26;
 }
 
 .svgIconCSS path {
-    transition: fill 0.5s ease;
+  transition: fill 0.5s ease;
 }
 
 .svgIconCSS:hover path {
-    transition: fill 0.5s ease;
-    fill: #1572B6;
+  transition: fill 0.5s ease;
+  fill: #1572b6;
 }
 
 .svgIconJavascript path {
-    transition: fill 0.5s ease;
+  transition: fill 0.5s ease;
 }
 
 .svgIconJavascript:hover path {
-    transition: fill 0.5s ease;
-    fill: #F0DB4F;
+  transition: fill 0.5s ease;
+  fill: #f0db4f;
 }
 
 .svgIconTypescript path {
-    transition: fill 0.5s ease;
+  transition: fill 0.5s ease;
 }
 
 .svgIconTypescript:hover path {
-    transition: fill 0.5s ease;
-    fill: #007acc;
+  transition: fill 0.5s ease;
+  fill: #007acc;
 }
 
 .svgIconTailwind path {
-    transition: fill 0.5s ease;
+  transition: fill 0.5s ease;
 }
 
 .svgIconTailwind:hover path {
-    transition: fill 0.5s ease;
-    fill: #38bdf8;
+  transition: fill 0.5s ease;
+  fill: #38bdf8;
 }
 
 .svgIconSASS path {
-    transition: fill 0.5s ease;
+  transition: fill 0.5s ease;
 }
 
 .svgIconSASS:hover path {
-    transition: fill 0.5s ease;
-    fill: #CB6699;
+  transition: fill 0.5s ease;
+  fill: #cb6699;
 }
 
 .svgIconSQL path {
-    transition: fill 0.5s ease;
+  transition: fill 0.5s ease;
 }
 
 .svgIconSQL:hover path {
-    transition: fill 0.5s ease;
-    fill: #00618A;
+  transition: fill 0.5s ease;
+  fill: #00618a;
 }
-
-
 
 /*//////////Parallax//////////*/
 
-
-
 .secondaryContent {
-    margin-top: 80px;
+  margin-top: 80px;
+  margin-bottom: 40px;
 }
 
 .parallax {
-    overflow: hidden;
-    letter-spacing: -2px;
-    line-height: 0.8;
-    margin: 0;
-    white-space: nowrap;
-    display: flex;
-    flex-wrap: nowrap;
+  overflow: hidden;
+  letter-spacing: -2px;
+  line-height: 0.8;
+  margin: 0;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 .parallax .scroller {
-    font-weight: 600;
-    text-transform: uppercase;
-    font-size: 40px;
-    display: flex;
-    white-space: nowrap;
-    display: flex;
-    flex-wrap: nowrap;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 40px;
+  display: flex;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.parallax span {
+  display: block;
+  margin-right: 10px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .aboutMe .centralContent {
+    width: 95vw;
   }
 
-  .parallax span {
-    display: block;
-    margin-right: 10px;
-    color: rgba(0, 0, 0, 0.5);
+  .aboutMeContent {
+    width: 97%;
+    font-size: 21px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .aboutMe .centralContent h1 {
+    font-size: 15vw;
   }
 
-  @media only screen and (min-width: 768px) and (max-width: 1024px) {
-
-    .aboutMe .centralContent {
-        width: 95vw;
-    }
-
-    .aboutMeContent {
-        width: 97%;
-        font-size: 21px;
-    }
-
+  .aboutMe .centralContent {
+    width: 95vw;
   }
 
-
-  @media only screen and (max-width: 768px) {
-
-    .aboutMe .centralContent h1 {
-        font-size: 15vw;
-    }
-    
-    .aboutMe .centralContent {
-        width: 95vw;
-    }
-
-    .aboutMeContent {
-        width: 90%;
-        font-size: 90%;
-    }
-
-    .languages {
-        width: 97vw;
-        height: 10vh;
-        top: 70%;
-        gap: 10px;
-    }
-
-    .languageIcon {
-        width: 8vw;
-        height: auto;
-    }
-
-    .parallax .scroller {
-        font-size: 2em;
-    }
-
+  .aboutMeContent {
+    width: 90%;
+    font-size: 90%;
   }
-  
+
+  .languages {
+    width: 97vw;
+    height: 10vh;
+    top: 70%;
+    gap: 10px;
+  }
+
+  .languageIcon {
+    width: 8vw;
+    height: auto;
+  }
+
+  .parallax .scroller {
+    font-size: 2em;
+  }
+}
